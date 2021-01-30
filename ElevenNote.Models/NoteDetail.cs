@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ElevenNote.Models
-{
-    public class NoteDetail
+namespace ElevenNote.Models //VIEW MODELS REPRESENT THE DATA THAT WE WANT TO SHOW ON THE PAGE. THEY ARE USEFUL BECAUSE YOU CAN PULL SPECIFIC PROPERITES FROM MULTIPLE TABLES 
+{                           //THIS LAYER WILL BE USED TO HOUSE THE MODELS FOR THE APPLICATION. THESE MODELS WILL BE CLASSES USED IN ALMOST ALL LAYERS OF THE APP.
+    public class NoteDetail  //This model class will let us view all the properties of the note. 
     {
         public int NoteId { get; set; }
         public string Title { get; set; }

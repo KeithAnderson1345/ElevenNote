@@ -6,9 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ElevenNote.Services
+namespace ElevenNote.Services  //THE MESSENGER THAT HELPS THE DATA AND PRESENTATION TIERS COMMUNICATE. EX's OF SERVICES INCLUDE AUTHENTICATION AND AUTHORIZATION.
+    //THE PURPOSE OF THE SERVICE LAYER WILL BE TO HOUSE THE LOGIC FOR USING ENTITY FRAMEWORK TO INTERACT WITH THE DATABASE. SERVICES WILL BE USED BY WEBAPI AND MVC
+    //APP TO DO THE HEAVY LIFTING FOR THE DATABASE CRUD OPERATIONS. 
 {
-    public class NoteService
+    public class NoteService //This class will push and pull notes from the database. 
     {
         private readonly Guid _userId;
 
@@ -35,7 +37,7 @@ namespace ElevenNote.Services
             }
         }
 
-        public IEnumerable<NoteListItem> GetNotes()
+        public IEnumerable<NoteListItem> GetNotes()    //This method will allow us to see all the notes that belong to a specific user. 
         {
             using (var ctx = new ApplicationDbContext())
             {

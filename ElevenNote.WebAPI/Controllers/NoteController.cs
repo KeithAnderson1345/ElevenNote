@@ -8,7 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace ElevenNote.WebAPI.Controllers
+namespace ElevenNote.WebAPI.Controllers //API PART OF THE APPLICATION (PRESENTATION TIER)
 {
     [Authorize]
     public class NoteController : ApiController

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ElevenNote.Models
-{
-    public class NoteCreate
+namespace ElevenNote.Models  //VIEW MODELS REPRESENT THE DATA THAT WE WANT TO SHOW ON THE PAGE. THEY ARE USEFUL BECAUSE YOU CAN PULL SPECIFIC PROPERITES FROM MULTIPLE TABLES. 
+{                            //THIS LAYER WILL BE USED TO HOUSE THE MODELS FOR THE APPLICATION. THESE MODELS WILL BE CLASSES USED IN ALMOST ALL LAYERS OF THE APP.
+    public class NoteCreate //This class model will allow for some validation for the note properties. 
     {
         [Required]
         [MinLength(2, ErrorMessage = "Please enter at least 2 characters.")]

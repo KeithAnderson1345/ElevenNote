@@ -7,7 +7,8 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 
-namespace ElevenNote.Data
+namespace ElevenNote.Data  //THIS IS WHERE WE SETUP OUR DATABASE USING ENTITY FRAMEWORK
+                           //THIS LAYER WILL BE USED TO HOUSE THE INFO ABOUT THE DATA ENTITIES. THESE ENTITIES WILL MATCH THE DATA TABLES IN TH PROJECT. 
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
