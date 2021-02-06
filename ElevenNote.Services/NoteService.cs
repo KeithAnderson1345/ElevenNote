@@ -27,6 +27,7 @@ namespace ElevenNote.Services  //THE MESSENGER THAT HELPS THE DATA AND PRESENTAT
                     OwnerId = _userId,
                     Title = model.Title,
                     Content = model.Content,
+                    CategoryId = model.CategoryId,
                     CreatedUtc = DateTimeOffset.Now
                 };
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,10 @@ namespace ElevenNote.Data //THIS LAYER WILL BE USED TO HOUSE THE INFO ABOUT THE 
     {
         [Key]
         public int NoteId { get; set; }
+
+        [ForeignKey(nameof(Category))]
+        public int CategoryId { get; set; }
+        public virtual Category Category { get; set; }        
 
         [Required]
         public Guid OwnerId { get; set; } //Guid is a type that allows a unique, near impossible to replicate, ID for the users or items for the users.

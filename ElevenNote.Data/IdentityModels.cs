@@ -34,6 +34,8 @@ namespace ElevenNote.Data  //THIS IS WHERE WE SETUP OUR DATABASE USING ENTITY FR
             return new ApplicationDbContext();
         }
 
+        public DbSet<Category> Categories { get; set; }
+
         public DbSet<Note> Notes { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
